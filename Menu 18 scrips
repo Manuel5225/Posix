@@ -1,0 +1,245 @@
+#!/bin/bash
+# A menu driven shell script sample template
+## ----------------------------------
+# Step #1: Define variables
+# ----------------------------------
+EDITOR=vim
+PASSWD=/etc/passwd
+RED='\033[0;41;30m'
+STD='\033[0;0;39m'
+
+one(){
+
+        clear
+        ./holamundo.sh
+        pause
+
+}
+
+two(){
+
+        clear
+        ./holamundo2.sh
+        pause
+
+}
+
+three(){
+
+        clear
+         ./3
+         pause
+
+}
+
+cuatro(){
+
+        clear
+        ./4
+        pause
+}
+
+cinco(){
+
+        clear
+        ./5
+        pause
+}
+
+seis(){
+
+        clear
+        ./6
+        pause
+}
+
+siete(){
+
+        clear
+        ./7
+        pause
+}
+
+ocho(){
+
+        clear
+        ./8
+        pause
+}
+
+nueve(){
+
+        clear
+        ./9
+        pause
+}
+
+diez(){
+
+        clear
+        ./10
+        pause
+}
+
+once(){
+
+        clear
+        ./11
+        pause
+}
+
+doce(){
+
+        clear
+        ./12
+        pause
+}
+
+trece(){
+                                              
+        clear
+        ./13
+        pause
+}
+
+catorce(){
+
+        clear
+        ./14
+        pause
+}
+
+quince(){
+
+        clear
+        ./15
+        pause
+}
+
+dieciseis(){
+
+        clear
+        ./16
+        pause
+}
+
+veinte(){
+
+        clear
+        ./20
+        pause
+}
+
+dieciocho(){
+
+        clear
+        ./18
+        pause
+}
+
+diesinueve(){
+
+        clear
+        ./19
+        pause
+}
+
+veintiuno(){
+                                              
+
+       clear
+       ./20
+       pause
+}
+
+veinte(){
+
+        clear
+        ./lab1.sh
+
+}
+# ----------------------------------
+# Step #2: User defined function
+# ----------------------------------
+pause(){
+  read -p "Press [Enter] key to continue..." fackEnterKey
+}
+
+
+# function to display menus
+show_menus() {
+        clear
+        echo "~~~~~~~~~~~~~~~~~~~~~"
+        echo -e "\033[42m\033[31m MAIN-MENU\033[0m"
+        echo "~~~~~~~~~~~~~~~~~~~~~"
+        echo "1. Set holamundo"
+        echo "2. hola mundo 2"
+        echo "3. variable"
+        echo "4. variable 1"
+        echo "5. matrix"
+        echo "6. otros"
+        echo "7. logistica"
+        echo "8. clausula"
+        echo "9. reconocimiento"
+        echo "10. caso"
+        echo "11. interacciones"
+        echo "12. mientras"
+        echo "13. hasta"
+        echo "14. seleccion"
+        echo "15. oficio"
+        echo "16. libros"
+        echo "17. señal"
+        echo "18. valores"
+        echo "19. colores"
+        echo "20. lab1.sh"
+        echo "21. exit"
+}
+# read input from the keyboard and take a action
+# invoke the one() when the user select 1 from the menu option.
+# invoke the two() when the user select 2 from the menu option.
+# Exit when user the user select 3 form the menu option.
+read_options(){
+        local choice
+        read -p "Enter choice [ 1 - 3] " choice
+        case $choice in
+                1) one ;;
+                2) two ;;
+                3) three ;;
+                4) cuatro ;;
+                5) cinco ;;
+                6) seis ;;
+                7) siete ;;
+                8) ocho ;;
+                9) nueve ;;
+                10) diez ;;
+                11) once ;;
+                12) doce ;;
+                13) trece ;;
+                14) catorce ;;
+                15) quince ;;
+                16) dieciseis ;;
+                17) veinte ;;
+                18) dieciocho ;;
+                19) diesinueve ;;
+                20) veinte ;;
+                21) exit 0 ;;
+
+                *) echo -e "${RED}Error...${STD}" && sleep 2
+        esac
+}
+
+# ----------------------------------------------
+# Step #3: Trap CTRL+C, CTRL+Z and quit singles
+# ----------------------------------------------
+trap '' SIGINT SIGQUIT SIGTSTP
+
+# -----------------------------------
+# Step #4: Main logic - infinite loop
+# ------------------------------------
+while true
+do
+
+        show_menus
+        read_options
+done
+                                                                
