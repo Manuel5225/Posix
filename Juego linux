@@ -1,0 +1,151 @@
+#!/bin/bash
+#script de la primera practica interactiva
+clear
+echo "Adivinanzas sobre conocimiento basico de linux"
+echo "el juego no te dejara avanzar hasta que ingreses la respuesta correcta"
+echo "conforme vayas avanzando, iras subiendo de nivel y dificultad"
+echo "si pierdes en una, comenzaras de nuevo desde el NIVEL 1"
+while true
+do
+        echo "NIVEL 1"
+echo "1. ¿que comando se utiliza para verificar el directorio actual?"
+        read respuesta
+        if [ $respuesta = "pwd" ]
+        then
+                echo "Bien echo la respuesta es correcta"
+                echo "El comando PWD en linux te devuelve la ruta en la que estas situado, se suele utilizar para saber en que parte de la estructura de directorios te encuentras
+        Es un comando muy simple pero a la vez muy útil para moverte por la estructura de comentarios sin perder nunca tu situación en la misma."
+
+        echo "NIVEL 2"
+echo "2. ¿Que comando se utiliza para cambiar de directorio?"
+        read respuesta
+        if [ $respuesta = "cd" ]
+        then
+                echo "Bien echo la respuesta es correcta"
+                echo "El comando cd sirve para cambiar de directorio, por ejemplo si estás en /home/directorio/ y quieres pasar a /home/directorio2/, tendrías que escribir:
+        # cd /home/directorio2/"
+
+echo "NIVEL 3"
+echo "3. ¿que comando se utiliza para crear un directorio nuevo"
+        read respuesta
+        if [ $respuesta = "mkdir" ]
+        then
+                echo "Bien la respuesta es correcta"
+                echo "El comando mkdir sirve para crear un nuevo directorio. Solo eso.
+        Hay que tener en cuenta que lo crea por defecto en el direcorio en el que te encuentres (te lo indica siempre en la terminal)."
+
+
+echo "NIVEL 4"
+echo "4. ¿con que comando creas un nuevo archivo?"
+        read respuesta
+        if [ $respuesta = "touch" ]
+        then
+                echo "Bien la respuesta es correcta"
+                echo "Este comando sirve para crear un nuevo archivo vacío si este no existe.
+Por ejemplo si queremos crear un nuevo archivo de texto para dejar una nota, podemos teclear:
+# touch archivo.txt"
+
+echo "NIVEL 5"
+echo "5. ¿Que comando se utiliza para borrar un archivo?"
+                                                                     read respuesta
+        if [ $respuesta  = "rm" ]
+        then
+                echo "Bien la respueta es correcta"
+                echo "Si queremos borrar algún archivo o directorio podemos hacer uso del comando rm.
+Para ello usaremos:
+# rm achivo.txt
+o bien:
+ # rm /ruta/del/archivo.txt"
+
+echo "NIVEL 6"
+echo "6. ¿Que comando se utililiza para copiar un archivo del directorio?"
+        read respuesta
+        if [ $respuesta = "cp" ]
+        then
+                echo "Bien la respuesta es la correcta"
+                echo "A la hora de copiar archivos vamos a necesitar el comando cp.
+Tenemos que indocarle la ruta de origen y la ruta de destino, en este orden:
+#cp/rutaorigen/archivo.txt/rutadestino/archivo.txt"
+
+
+echo "NIVEL 7"
+echo "7. ¿que comando se utiliza para ver el contenido de un archivo?"
+        read respuesta
+        if [ $respuesta = "cat" ]
+        then
+                echo "Bien la respuesta es correcta"
+                echo "Cat sirve para ver el contenido de un achivo sin editarlo. Simplemente nos muestra su contenido sin posibilidad de cambiarlo.
+ # cat archivo.txt"
+
+echo "NIVEL 8"
+echo "8. ¿que comando se utiliza para camiar al modo super usuario?"
+        read respuesta
+        if [ $respuesta =  "su" ]
+        then
+                echo "Bien la respuesta es correcta"
+                echo "El comando su cambia al modo de superusuario o “root”.
+Este modo es el que necesitarás si quieres cambiar algo importante o necesitas permiso para acceder a determinados archivos. Se trata del administrador del sistema.
+Al cambiar a este modo nos pedirá na contraseña, al teclearla no verás nada, con lo que asegúrate de escribirla bien.
+# su"
+
+echo "NIVEL 9"
+echo "9. ¿Cual comando se necesita para reiniciar el sistema"
+        read respuesta
+        if [ $respuesta = "reboot" ]
+        then
+                echo "Bien la respuesta es correcta"
+       echo "Reinicia el sistema operativo.
+                # reboot"
+
+
+echo "NIVEL 10"
+echo "10. ¿Cual comando se usa para cambiar la contraseña del root?"
+        read respuesta
+        if [[ $respuesta = "sudo passwd" ]];
+        then
+                echo "la respuesta es correcta"
+                echo "Cambia la contraseña del usuario root #sudo passwd"
+
+
+
+        else [ $respuesta != "pwd" ]
+        echo "la respuesta no es correcta, vuelve a intentarlo"
+        fi
+
+else [ $respuesta != "cd" ]
+        echo  "Has perdido regresas al nivel 1"
+        fi
+
+        else [ $respuesta != "mkdir" ]
+               echo "Has perdido regresas al nivel 1"
+        fi
+else [ $respuesta != "touch" ]
+        echo "Has perdido regresas al nivel 1"
+        fi
+else [ $respuesta != "rm" ]
+        echo "Has peridio regresas al nivel 1"
+        fi
+
+else [ $respuesta != "cp" ]
+        echo "Has perdido regresas al nivel 1"
+        fi
+
+else [ $respuesta != "cat" ]
+        echo "Has perdido regresas al nivel 1"
+        fi
+
+else [ $respuesta != "su" ]
+        echo "Has perdido regresa al nivel 1"
+        fi
+
+else [ $respuesta != "reboot" ]
+        echo "Has perdido regresa al nivel 1"
+        fi
+
+else [ $respuesta != "sudo passwd" ]
+        echo "Has perdido regresa al nivel 1"
+        fi
+
+done
+while
+                                                                          
