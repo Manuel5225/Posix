@@ -1,0 +1,29 @@
+COMANDOS PARA DIRECTORIOS
+PWD	Visualiza el directorio actual
+LS	Lista los archivos y carpetas del directorio actual
+CD	Hace que navegues hasta el directorio actual
+CP	Copia la fuente del objetivo
+MV 	Mueve la fuente al objetivo removiendo la fuente
+
+COMANDOS PARA CUENTAS
+SU	Super usuario 
+usseradd 	Crear nueva cuenta de usuario
+Passwd	Para ponerle contraseña al usuario
+Groupadd 	Para crear grupos
+Userdel 	Eliminar usuarios
+
+COMANDOS PARA BORRAR
+Rm	Sirve para borrar archivos
+RMDIR	Sirve para borrar directorios
+
+COMANDOS PARA PROCESOS
+
+TOP	Sirve para mostrar los recursos usados por el sistema
+Htop	Sirve para realizar operaciones como para un proceso usando las teclas
+Ps	Sirve para manipular procesos en Linux
+Pstree	Sirve para visualizar todos los procesos en forma de árbol
+Kill	Comando para matar o parar un proceso
+
+Pgrep	Sirve para devolver el ID al proceso
+Renice	Determina la prioridad del proceso
+
